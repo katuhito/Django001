@@ -1,13 +1,9 @@
 {% extends 'base.html' %}
-{% block Content %}
-<h1>list Page</h1>
-<ul>
-    {% for item in object_list %}
-        <li>
-            {{ item.title }}: {{ item.memo }}
-            <a href="{% url 'update' item.pk %}">編集する</a>
-            <a href="{% url 'delete' item.pk %}">削除する</a>
-        </li>
-    {% endfor %}
-</ul>
-{% endblock Content %}
+
+{% block title %}Katuhito Hara{% endblock %}
+
+{% block contents %}
+
+<p>Katuhito Hara</p>
+
+{% endblock %}
